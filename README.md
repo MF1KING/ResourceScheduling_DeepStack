@@ -5,15 +5,14 @@
 
 ```
 .
-├── Prediction.py               # Module de prédiction (DeepStack)
-├── action.py                  # Définition des actions possibles
-├── checks.py                  # Vérifications et contraintes du système
+├── Prediction.py              # Module de prédiction (DeepStack)
+├── checks.py                  # Testing
 ├── estimator_functions.py     # Fonctions d’estimation
 ├── helpers.py                 # Fonctions utilitaires
-├── kpi_formula.py             # Calcul des indicateurs de performance (KPI)
+├── kpi_formula.py             # Calcul de KPI
 ├── main.py                    # Script principal
-├── plot_selon_k.py            # Visualisation selon le nombre de slots/k
-├── plot_selon_max_ues.py      # Visualisation selon le nombre max d’utilisateurs
-├── state.py                   # Représentation de l’état du système
-└── ue.py                      # Modélisation des utilisateurs (UE)
+├── plot_selon_k.py            # Visualisation 
+├── plot_selon_max_ues.py      # Visualisation 
+├── state.py                   # Class : Représentation de l’état du système
+└── ue.py                      # Class : Modélisation des utilisateurs (UE)
 ```
