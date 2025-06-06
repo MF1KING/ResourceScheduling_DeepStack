@@ -1,8 +1,10 @@
 # ResourceScheduling_DeepStack
+## Description
+Ce projet propose l’implémentation d’un **Scheduler 5G adaptif** basé sur l’approche **DeepStack**, une méthode initialement développée pour résoudre des problèmes décisionnels complexes et partiellement observables, comme ceux rencontrés dans les jeux à information incomplète.
+L’objectif est de démontrer la pertinence de DeepStack dans le domaine des télécommunications, en l’appliquant à un problème concret : la **planification dynamique des ressources dans les réseaux 5G (Resource Scheduling)**.
 
 
 ## 📁 Arborescence du projet
-
 ```
 .
 ├── Prediction.py              # Module de prédiction (DeepStack)
@@ -17,11 +19,11 @@
 └── ue.py                      # Class : Modélisation des utilisateurs (UE)
 ```
 ## 🛠️ Dépendances
-
 Pour exécuter ce projet, assurez-vous d’avoir les bibliothèques Python suivantes installées :
 - Python ≥ 3.8
 - Bibliothèques : numpy, matplotlib, scipy.
 
-
+## Author : 
+Melek FENDRI: melek.fendri@epfl.ch
 
 
