@@ -74,7 +74,7 @@ def update_buffer_size(buffer_t, nrbs, cqi, BMAX, T_slot, Nsym):
 
 
 # Affichage
-#print(f"🎯 Scenario: {chosen_scenario}")
+#print(f" Scenario: {chosen_scenario}")
 #print(f"→ v = {v:.2f} m/s, fc = {fc/1e9:.1f} GHz")
 #print(f"→ Doppler shift f_d = {f_d:.2f} Hz")
 
