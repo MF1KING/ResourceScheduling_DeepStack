@@ -1,6 +1,6 @@
 # ResourceScheduling_DeepStack
 
-.
+
 ## 📁 Arborescence du projet
 
 ```
@@ -16,3 +16,9 @@
 ├── state.py                   # Class : Représentation de l’état du système
 └── ue.py                      # Class : Modélisation des utilisateurs (UE)
 ```
+## 🛠️ Dépendances
+
+Pour exécuter ce projet, assurez-vous d’avoir les bibliothèques Python suivantes installées :
+- `numpy`
+- `scipy`
+- `matplotlib`
