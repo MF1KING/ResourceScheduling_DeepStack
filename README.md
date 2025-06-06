@@ -19,6 +19,9 @@
 ## 🛠️ Dépendances
 
 Pour exécuter ce projet, assurez-vous d’avoir les bibliothèques Python suivantes installées :
-- `numpy`
-- `scipy`
-- `matplotlib`
+- Python ≥ 3.8
+- numpy, matplotlib, scipy
+
+
+
+Bibliothèques : numpy, matplotlib, (optionnellement torch ou tensorflow si version DeepStack avec réseaux de neurones)
