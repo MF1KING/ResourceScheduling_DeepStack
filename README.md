@@ -4,7 +4,7 @@ Ce projet propose l’implémentation d’un **Scheduler 5G adaptif** basé sur 
 L’objectif est de démontrer la pertinence de DeepStack dans le domaine des télécommunications, en l’appliquant à un problème concret : la **planification dynamique des ressources dans les réseaux 5G (Resource Scheduling)**.
 
 
-## 📁 Arborescence du projet
+## 📁 Files
 ```
 .
 └── src/
