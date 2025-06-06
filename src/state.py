@@ -54,8 +54,7 @@ class State:
         if ue_list is not None:
             self.ue_activity_history.append(len(ue_list))
 
-        #self.cqi = Predict_cqi(self.cqi_history[-1], sigma, c, T_slot)
-        #self.buffer = update_buffer_size(self.buffer_history[-1], self.n_rbs, self.cqi_history[-1], BMAX, T_slot)
+       
 
     def simulate(self, action, ue_list):
         # Simule la prochaine étape sans modifier l'état courant
