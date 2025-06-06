@@ -1,6 +1,10 @@
 # ResourceScheduling_DeepStack
 
 .
+## 📁 Arborescence du projet
+
+```
+.
 ├── Prediction.py               # Module de prédiction (DeepStack)
 ├── action.py                  # Définition des actions possibles
 ├── checks.py                  # Vérifications et contraintes du système
@@ -12,3 +16,4 @@
 ├── plot_selon_max_ues.py      # Visualisation selon le nombre max d’utilisateurs
 ├── state.py                   # Représentation de l’état du système
 └── ue.py                      # Modélisation des utilisateurs (UE)
+```
