@@ -31,21 +31,9 @@ class State:
         self.buffer_history = []  # List[float]
         self.ue_activity_history = []  # List[int]
 
-    def clone(self):
-        # Retourne une copie profonde de l'état
-        return copy.deepcopy(self)
+  
 
-    def observe(self):
-        # Renvoie une copie de l'état pour l'observation
-        return self.clone()
-
-    def update(self, action):
-        # Applique les attributs de l'action planifiée
-        self.ue_id = action.ue_id
-        self.scheduling_type = action.scheduling_type
-        self.mcs = action.mcs
-        self.n_rbs = action.n_rbs
-        self.N_sym = action.N_sym
+   
 
     def enrich(self, ue_list=None):
         # Historisation des valeurs courantes
@@ -56,26 +44,4 @@ class State:
 
        
 
-    def simulate(self, action, ue_list):
-        # Simule la prochaine étape sans modifier l'état courant
-        next_state = self.clone()
-        next_state.update(action)
-
-        #next_state.enrich(ue_list)
-        return next_state
-
-    def get_normalized_vector(self):
-        # Normalisation des caractéristiques pour le ML
-        labels = {'Dynamic': 0, 'SPS': 1, 'Grant-Free': 2}
-        mcs_map = {'QPSK': 0, '16QAM': 1, '64QAM': 2, '256QAM': 3}
-        features = [
-            self.cqi / 15,
-            self.buffer / 2,
-            self.qos_latency / 50,
-            self.qos_throughput / 10,
-            labels.get(self.scheduling_type, 0),
-            mcs_map.get(self.mcs, 0),
-            self.n_rbs / 10
-        ]
-        return np.array(features, dtype=np.float32)
-
+  
