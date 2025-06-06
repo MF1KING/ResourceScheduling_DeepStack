@@ -34,10 +34,7 @@ start_time = time.time()
 
 load_ratio_indicator = []
 load_ratio_expected_indicator= []
-nb_warning = 0
-pass_nb = 0
-cqi0 = 0 
-cqiii =0 
+
 
 
 
@@ -99,15 +96,7 @@ for t in range(1, NB_SLOTS + 1):
                 for Nsym in nsym_options:
                     N = compute_regret_and_sigma_for_nsym(ue, Nsym, cqi_k, k, ue_regret, sigma_list, t,T_queue, T_proc_gNB, rbs_remaining_per_slot, MAX_ALLOC_PER_UE, S)
              
-             # verifier le nb de cqi_k =0 predis , si plus de 3/4 des cas --> I =0    
-            zero_cqi_ratio = sum(1 for cq in predicted_cqis if cq == 0) / len(predicted_cqis)
-            pass_nb+=1
-            #if zero_cqi_ratio >= 0.75:
-                #print(f"[WARNING] UE id={ue.ue_id} discarded due to low CQI predictions (ratio {zero_cqi_ratio:.2f} out of {pass_nb})")
-                #nb_warning +=1 
-                #ue.state.rb_chosen = 0
-                #ue_list_unscheduled.append(ue)
-                #continue        
+             
 
             nsym_to_N_pairs = [(Nsym, N)] if scheduling_type == "Grant-Free Type1" else [(n, N) for n in [2, 4, 7]]
             # meilleur action choix avec Nsym , I a partir du sigma_moy 
