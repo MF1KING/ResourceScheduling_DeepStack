@@ -21,24 +21,5 @@ class UE:
             buffer=initial_buffer,
         ) 
 
-    def observe_state(self, ue_list):
-        """
-        Au début du slot suivant :
-        - historise et prédit CQI et buffer dans l'état
-        - renvoie une copie de l'état pour prise de décision
-        """
-        self.state.enrich(ue_list)
-        return self.state.clone()
 
-    def update_after_action(self, action: Action):
-        """
-        Enregistre l'action validée dans l'état, sans toucher au buffer ni au CQI.
-        Les mises à jour réelles du buffer et du CQI auront lieu au début du slot
-        suivant dans `observe_state` via `state.enrich`.
-        """
-        self.state.update(action)
-
-
-
-    
     
