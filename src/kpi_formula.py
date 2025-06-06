@@ -15,9 +15,6 @@ L_min, L_max = 5, 300
 
 
 
-#def compute_violation(latency, qos_latency, throughput, qos_throughput):
-    #return int(latency > qos_latency) + int(throughput < qos_throughput)
-
 def compute_violation(latency, qos_latency, throughput, qos_throughput):
     latency_penalty = max(0, (latency - qos_latency) / qos_latency)
     throughput_penalty = max(0, (qos_throughput - throughput) / qos_throughput)
