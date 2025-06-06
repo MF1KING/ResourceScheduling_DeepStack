@@ -1,6 +1,6 @@
 # ResourceScheduling_DeepStack
 ## Description
-Ce projet propose l’implémentation d’un **Scheduler 5G adaptif** basé sur l’approche **DeepStack**, une méthode initialement développée pour résoudre des problèmes décisionnels complexes et partiellement observables, comme ceux rencontrés dans les jeux à information incomplète.
+Ce projet propose l’implémentation d’un **Scheduler 5G adaptif** basé sur l’approche **DeepStack**. DeepStack a été initialement conçu pour résoudre des problèmes décisionnels dans des environnements complexes et partiellement observables, comme le Heads-Up No-Limit Poker, un jeu à information incomplète.
 L’objectif est de démontrer la pertinence de DeepStack dans le domaine des télécommunications, en l’appliquant à un problème concret : la **planification dynamique des ressources dans les réseaux 5G (Resource Scheduling)**.
 
 
